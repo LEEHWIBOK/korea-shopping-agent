@@ -21,17 +21,8 @@
     text-align: center;
   }
 
-  header h1 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1a1a1a;
-  }
-
-  header p {
-    font-size: 13px;
-    color: #888;
-    margin-top: 4px;
-  }
+  header h1 { font-size: 22px; font-weight: 700; color: #1a1a1a; }
+  header p { font-size: 13px; color: #888; margin-top: 4px; }
 
   .container {
     max-width: 560px;
@@ -55,11 +46,7 @@
     margin-bottom: 8px;
   }
 
-  .step-title {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 6px;
-  }
+  .step-title { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
 
   .step-sub {
     font-size: 13px;
@@ -68,9 +55,7 @@
     line-height: 1.6;
   }
 
-  .input-group {
-    margin-bottom: 20px;
-  }
+  .input-group { margin-bottom: 20px; }
 
   label {
     display: block;
@@ -96,9 +81,70 @@
     background: #fff;
   }
 
-  input::placeholder {
-    color: #bbb;
-    font-size: 13px;
+  input::placeholder { color: #bbb; font-size: 13px; }
+
+  .lang-note { font-size: 11px; color: #bbb; margin-top: 4px; }
+
+  /* 상품 링크 섹션 */
+  .product-section {
+    border: 1.5px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #fafafa;
+    position: relative;
+  }
+
+  .product-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .product-number {
+    font-size: 12px;
+    font-weight: 700;
+    color: #888;
+    letter-spacing: 0.5px;
+  }
+
+  .btn-remove {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 4px;
+    transition: color 0.2s;
+  }
+
+  .btn-remove:hover { color: #ff4444; }
+
+  .product-section input {
+    margin-bottom: 10px;
+  }
+
+  .product-section input:last-child { margin-bottom: 0; }
+
+  .btn-add {
+    width: 100%;
+    padding: 13px;
+    background: none;
+    border: 1.5px dashed #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #888;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+  }
+
+  .btn-add:hover {
+    border-color: #1a1a1a;
+    color: #1a1a1a;
+    background: #f8f8f8;
   }
 
   .btn-primary {
@@ -134,16 +180,9 @@
     margin: 0 auto 16px;
   }
 
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loader p { font-size: 14px; color: #888; }
 
-  .loader p {
-    font-size: 14px;
-    color: #888;
-  }
-
-  /* 견적 결과 */
   .result-card {
     display: none;
     background: #fff;
@@ -153,43 +192,56 @@
     margin-top: 16px;
   }
 
-  .result-product {
-    font-size: 15px;
+  .result-item {
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+
+  .result-item-name {
+    font-size: 14px;
     font-weight: 700;
+    margin-bottom: 10px;
     color: #1a1a1a;
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #f0f0f0;
   }
 
   .price-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    font-size: 14px;
+    padding: 6px 0;
+    font-size: 13px;
     color: #666;
     border-bottom: 1px solid #f8f8f8;
   }
 
   .price-row.total {
-    margin-top: 8px;
-    padding-top: 16px;
-    border-top: 2px solid #1a1a1a;
+    margin-top: 6px;
+    padding-top: 10px;
+    border-top: 1.5px solid #1a1a1a;
     border-bottom: none;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     color: #1a1a1a;
   }
 
-  .price-row span:last-child {
-    font-weight: 600;
-    color: #1a1a1a;
+  .price-row span:last-child { font-weight: 600; color: #1a1a1a; }
+
+  .grand-total {
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 16px;
   }
 
-  .intent-section {
-    margin-top: 28px;
-  }
+  .intent-section { margin-top: 28px; }
 
   .intent-title {
     font-size: 14px;
@@ -216,16 +268,8 @@
     background: #fff;
   }
 
-  .btn-intent.yes {
-    border-color: #1a1a1a;
-    background: #1a1a1a;
-    color: #fff;
-  }
-
-  .btn-intent.no {
-    color: #888;
-  }
-
+  .btn-intent.yes { border-color: #1a1a1a; background: #1a1a1a; color: #fff; }
+  .btn-intent.no { color: #888; }
   .btn-intent:hover.yes { background: #333; }
   .btn-intent:hover.no { background: #f8f8f8; }
 
@@ -253,12 +297,6 @@
     cursor: pointer;
     color: #666;
   }
-
-  .lang-note {
-    font-size: 11px;
-    color: #bbb;
-    margin-top: 4px;
-  }
 </style>
 </head>
 <body>
@@ -270,25 +308,18 @@
 
 <div class="container">
 
-  <!-- 입력 폼 -->
   <div class="card" id="formCard">
     <div class="step-label">Step 1 · Шаг 1 · 1단계</div>
     <div class="step-title">상품 링크를 입력하세요</div>
     <div class="step-sub">
-      Вставьте ссылку на товар, который хотите заказать из Кореи.<br>
-      Paste the product link you want to order from Korea.
+      Вставьте ссылки на товары, которые хотите заказать из Кореи.<br>
+      Paste the product links you want to order from Korea.
     </div>
 
+    <!-- 고객 정보 -->
     <div class="input-group">
-      <label>상품 링크 / Ссылка на товар / Product Link</label>
-      <input type="url" id="productLink" placeholder="https://..." />
-      <div class="lang-note">쿠팡, 올리브영, SNS, 이미지 링크 모두 가능 · Любые ссылки</div>
-    </div>
-
-    <div class="input-group">
-      <label>상품명 (선택) / Название товара / Product Name</label>
-      <input type="text" id="productName" placeholder="예: 라운드랩 자작나무 선크림 50ml" />
-      <div class="lang-note">링크만 있어도 됩니다 · Необязательно</div>
+      <label>고객명 / Имя / Name</label>
+      <input type="text" id="customerName" placeholder="이름을 입력하세요 · Введите имя · Enter your name" />
     </div>
 
     <div class="input-group">
@@ -303,6 +334,15 @@
         <option value="유럽">🇪🇺 Европа / 유럽</option>
         <option value="기타">🌍 Другое / 기타</option>
       </select>
+    </div>
+
+    <!-- 상품 링크 섹션 -->
+    <div class="input-group">
+      <label>상품 링크 / Ссылки на товары / Product Links</label>
+      <div id="productList"></div>
+      <button class="btn-add" onclick="addProduct()">
+        + 상품 추가 · Добавить товар · Add Product
+      </button>
     </div>
 
     <button class="btn-primary" onclick="submitRequest()">
@@ -320,24 +360,11 @@
   <div class="result-card" id="resultCard">
     <div class="step-label">Step 2 · Шаг 2 · 2단계</div>
     <div class="step-title">견적 결과 · Результат расчёта</div>
+    <div id="resultItems"></div>
 
-    <div class="result-product" id="resultProductName"></div>
-
-    <div class="price-row">
-      <span>한국 판매가 · Цена в Корее</span>
-      <span id="r_koreanPrice"></span>
-    </div>
-    <div class="price-row">
-      <span>구매대행비 · Комиссия</span>
-      <span id="r_proxyFee"></span>
-    </div>
-    <div class="price-row">
-      <span>배송료 · Доставка</span>
-      <span id="r_shippingFee"></span>
-    </div>
-    <div class="price-row total">
-      <span>최종 금액 · Итого</span>
-      <span id="r_finalPrice"></span>
+    <div class="grand-total">
+      <span>총 합계 · Итого · Total</span>
+      <span id="grandTotal"></span>
     </div>
 
     <div class="intent-section">
@@ -373,50 +400,81 @@
 
 <script>
   const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyk8RPMVDAEIkaFWPb8lUP_DazjUcKZn5Ah9whFuPTAsBKfDynloXMvfNQ1yNBjbPajoQ/exec'; //
-  let currentRow = null;
+  let productCount = 0;
   let currentData = null;
 
+  // 페이지 로드시 상품 1개 기본 추가
+  window.onload = function() { addProduct(); };
+
+  function addProduct() {
+    productCount++;
+    const div = document.createElement('div');
+    div.className = 'product-section';
+    div.id = `product-${productCount}`;
+    div.innerHTML = `
+      <div class="product-section-header">
+        <span class="product-number">상품 ${productCount} · Товар ${productCount}</span>
+        ${productCount > 1 ? `<button class="btn-remove" onclick="removeProduct(${productCount})">×</button>` : ''}
+      </div>
+      <input type="url" id="link-${productCount}" placeholder="https://..." />
+      <input type="text" id="name-${productCount}" placeholder="상품명 (선택) · Название товара · Product name" />
+    `;
+    document.getElementById('productList').appendChild(div);
+  }
+
+  function removeProduct(id) {
+    const el = document.getElementById(`product-${id}`);
+    if (el) el.remove();
+  }
+
   async function submitRequest() {
-    const link = document.getElementById('productLink').value.trim();
-    const name = document.getElementById('productName').value.trim();
+    const customerName = document.getElementById('customerName').value.trim();
     const contact = document.getElementById('contact').value.trim();
     const country = document.getElementById('country').value;
 
-    if (!link) {
-      alert('상품 링크를 입력해주세요 · Введите ссылку на товар');
+    // 상품 목록 수집
+    const products = [];
+    const sections = document.querySelectorAll('.product-section');
+    sections.forEach((section, index) => {
+      const id = section.id.replace('product-', '');
+      const link = document.getElementById(`link-${id}`)?.value.trim();
+      const name = document.getElementById(`name-${id}`)?.value.trim();
+      if (link) products.push({ link, name: name || `상품 ${index + 1}` });
+    });
+
+    if (products.length === 0) {
+      alert('상품 링크를 최소 1개 입력해주세요 · Введите хотя бы одну ссылку');
       return;
     }
 
-    // 로딩 표시
     document.getElementById('formCard').style.display = 'none';
     document.getElementById('loader').style.display = 'block';
 
-    // 임시 한국판매가 (운영자가 나중에 입력) - MVP용
-    const tempKoreanPrice = 0;
-
-    currentData = {
-      productLink: link,
-      productName: name || '상품명 확인 필요',
-      contact: contact,
-      country: country,
-      koreanPrice: tempKoreanPrice,
-      selectedStore: '확인 필요'
-    };
+    currentData = { customerName, contact, country, products };
 
     try {
-      const res = await fetch(SCRIPT_URL, {
-        method: 'POST',
-        body: JSON.stringify(currentData)
-      });
-      const result = await res.json();
+      // 상품별로 각각 Sheets에 저장
+      const results = [];
+      for (const product of products) {
+        const res = await fetch(SCRIPT_URL, {
+          method: 'POST',
+          body: JSON.stringify({
+            customerName,
+            contact,
+            country,
+            productLink: product.link,
+            productName: product.name,
+            koreanPrice: 0,
+            selectedStore: '확인 필요'
+          })
+        });
+        const result = await res.json();
+        results.push({ ...result, productName: product.name });
+      }
 
       document.getElementById('loader').style.display = 'none';
+      showResults(results);
 
-      if (result.success) {
-        showResult(result);
-      } else {
-        throw new Error(result.error);
-      }
     } catch(err) {
       document.getElementById('loader').style.display = 'none';
       document.getElementById('formCard').style.display = 'block';
@@ -424,19 +482,39 @@
     }
   }
 
-  function showResult(result) {
-    document.getElementById('resultProductName').textContent =
-      currentData.productName;
+  function showResults(results) {
+    const container = document.getElementById('resultItems');
+    container.innerHTML = '';
+    let grandTotal = 0;
 
-    document.getElementById('r_koreanPrice').textContent =
-      result.koreanPrice ? formatKRW(result.koreanPrice) : '확인 중...';
-    document.getElementById('r_proxyFee').textContent =
-      result.proxyFee ? formatKRW(result.proxyFee) : '확인 중...';
-    document.getElementById('r_shippingFee').textContent =
-      result.shippingFee ? formatKRW(result.shippingFee) : '확인 중...';
-    document.getElementById('r_finalPrice').textContent =
-      result.finalPrice ? formatKRW(result.finalPrice) : '확인 중...';
+    results.forEach(result => {
+      const item = document.createElement('div');
+      item.className = 'result-item';
+      item.innerHTML = `
+        <div class="result-item-name">${result.productName}</div>
+        <div class="price-row">
+          <span>한국 판매가 · Цена в Корее</span>
+          <span>확인 중...</span>
+        </div>
+        <div class="price-row">
+          <span>구매대행비 · Комиссия</span>
+          <span>확인 중...</span>
+        </div>
+        <div class="price-row">
+          <span>배송료 · Доставка</span>
+          <span>${result.shippingFee ? formatKRW(result.shippingFee) : '확인 중...'}</span>
+        </div>
+        <div class="price-row total">
+          <span>소계 · Итого</span>
+          <span>${result.finalPrice ? formatKRW(result.finalPrice) : '확인 중...'}</span>
+        </div>
+      `;
+      container.appendChild(item);
+      if (result.finalPrice) grandTotal += result.finalPrice;
+    });
 
+    document.getElementById('grandTotal').textContent =
+      grandTotal > 0 ? formatKRW(grandTotal) : '확인 중...';
     document.getElementById('resultCard').style.display = 'block';
   }
 
@@ -459,9 +537,11 @@
   function resetForm() {
     document.getElementById('successMsg').style.display = 'none';
     document.getElementById('formCard').style.display = 'block';
-    document.getElementById('productLink').value = '';
-    document.getElementById('productName').value = '';
+    document.getElementById('customerName').value = '';
     document.getElementById('contact').value = '';
+    productCount = 0;
+    document.getElementById('productList').innerHTML = '';
+    addProduct();
   }
 </script>
 
